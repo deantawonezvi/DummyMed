@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class PatientsTableSeeder extends Seeder
 {
@@ -11,6 +12,8 @@ class PatientsTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('patients')->delete();
+
         $faker = \Faker\Factory::create();
 
         for($i =0; $i<50; $i++){

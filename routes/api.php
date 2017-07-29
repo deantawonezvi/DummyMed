@@ -24,3 +24,12 @@ Route::post('/patient/add', 'PatientController@addPatient');
 Route::post('/patient/update', 'PatientController@updatePatient');
 Route::post('/patient/delete', 'PatientController@deletePatient');
 Route::get('/patient/get', 'PatientController@getPatient');
+
+
+/*
+ * INVENTORY API
+ * */
+Route::post('/inventory/add', 'InventoryController@addInventory');
+Route::post('/inventory/update', 'InventoryController@updateInventory');
+Route::post('/inventory/delete', 'InventoryController@deleteInventory');
+Route::get('/inventory/get', 'InventoryController@getInventory');
